@@ -19,7 +19,7 @@ public class Peon extends Pieza {
                     y1 = y2;
                     tablero[x1][y1] = " ";
                     canMove = true;
-                } else if (tablero[x1 + 1][y1 + 1] != " " ||tablero[x1 - 1][y1 + 1] != " "){
+                } else if (tablero[x1 + 1][y1 + 1] != " " || tablero[x1 - 1][y1 + 1] != " "){
                     x1 = x2;
                     y1 = y2;
                     tablero[x1][y1] = " ";
