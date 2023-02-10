@@ -8,6 +8,12 @@ package lab4p2_equipo1;
  *
  * @author luiscarlomendoza
  */
-public class Caballo {
+public class Caballo extends Pieza  {
+
+    @Override
+    public boolean Mover(int x1, int y1, int x2, int y2, boolean color, Object[][] tablero) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
     
 }
