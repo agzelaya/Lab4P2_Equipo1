@@ -5,6 +5,10 @@ package lab4p2_equipo1;
  * @author luiscarlomendoza
  */
 public class Alfil extends Pieza {
+    
+    public Alfil(boolean color) {
+        super(color);
+    }
 
     @Override
     public boolean Mover(int x1, int y1, int x2, int y2, Object[][] tablero) {

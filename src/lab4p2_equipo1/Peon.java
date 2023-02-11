@@ -14,8 +14,8 @@ public class Peon extends Pieza {
             canMove = false;
         } else {
             if (color = false) {
-                if (y1 == 1) {
-                    if (y2 == y1 + 1 || y2 == y1 + 2 && (tablero[x1][y1 + 1] == " " || tablero[x1][y1 + 2] == " ")) {
+                if (x1 == 1) {
+                    if (x2 == x1 + 1 || x2 == x1 + 2 && (tablero[x1+1][y1] == " " || tablero[x1+2][y1 + 2] == " ")) {
 
                         canMove = true;
                     } else if ((tablero[x1 + 1][y1 + 1] != " " || tablero[x1 - 1][y1 + 1] != " ") && ((Pieza) tablero[x2][y2]).color) {
@@ -23,7 +23,7 @@ public class Peon extends Pieza {
                         canMove = true;
                     }
                 } else {
-                    if (y2 == y1 + 1 && (tablero[x1][y1 + 1] == " ")) {
+                    if (x2 == x1 + 1 && (tablero[x1][x1 + 1] == " ")) {
                         canMove = true;
                     } else if ((tablero[x1 + 1][y1 + 1] != " " || tablero[x1 - 1][y1 + 1] != " ") && ((Pieza) tablero[x2][y2]).color) {
 
@@ -31,15 +31,15 @@ public class Peon extends Pieza {
                     }
                 }
             } else if (color == true) {
-                if (y1 == 6) {
-                    if (y2 == y1 - 1 || y2 == y1 - 2 && (tablero[x1][y1 - 1] == " " || tablero[x1][y1 - 2] == " ")) {
+                if (x1 == 6) {
+                    if (x2 == x1 - 1 || x2 == x1 - 2 && (tablero[x1][y1 - 1] == " " || tablero[x1][y1 - 2] == " ")) {
                         canMove = true;
                     } else if ((tablero[x1 + 1][y1 - 1] != " " || tablero[x1 - 1][y1 - 1] != " ") && ((Pieza) tablero[x2][y2]).color == false) {
 
                         canMove = true;
                     }
                 } else {
-                    if (y2 == y1 - 1 && (tablero[x1][y1 - 1] == " ")) {
+                    if (x2 == 1 - 1 && (tablero[x1][y1 - 1] == " ")) {
                         canMove = true;
                     } else if ((tablero[x1 + 1][y1 - 1] != " " || tablero[x1 - 1][y1 - 1] != " ") && ((Pieza) tablero[x2][y2]).color == false) {
 
