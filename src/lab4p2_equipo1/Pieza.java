@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package lab4p2_equipo1;
 
-/**
- *
- * @author luiscarlomendoza
- */
 public abstract class Pieza {
     
     protected String name;
@@ -26,6 +18,11 @@ public abstract class Pieza {
     public Pieza() {
     }
 
+    public Pieza(boolean color) {
+        this.color = color;
+    }
+    
+    
     public Pieza(String name, int x1, int y1, int x2, int y2, boolean color) {
         this.name = name;
         this.x1 = x1;
@@ -86,6 +83,6 @@ public abstract class Pieza {
     
     
     
-    public abstract boolean Mover(int x1, int y1, int x2, int y2, boolean color, Object [][] tablero);
+    public abstract boolean Mover(int x1, int y1, int x2, int y2, Object [][] tablero);
     
 }
